@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chatllm"
+version = "0.1.0"
+description = "Simple chat LLM wrapper with history helpers"
+requires-python = ">=3.10"
+authors = [{ name = "Caio Salgado", email = "caiosalgado@hotmail.com" }]
+license = { text = "MIT" }
+dependencies = [
+  "transformers>=4.42",
+  "torch>=2.1",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.urls]
+Homepage = "https://github.com/caiosalgado/chatllm"
+Repository = "https://github.com/caiosalgado/chatllm.git"
+Issues = "https://github.com/caiosalgado/chatllm/issues"

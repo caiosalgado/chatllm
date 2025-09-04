@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: chatllm
+Version: 0.1.0
+Summary: Simple chat LLM wrapper with history helpers
+Author-email: Caio Salgado <caiosalgado@hotmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/caiosalgado/chatllm
+Project-URL: Repository, https://github.com/caiosalgado/chatllm.git
+Project-URL: Issues, https://github.com/caiosalgado/chatllm/issues
+Requires-Python: >=3.10
+License-File: LICENSE
+Requires-Dist: transformers>=4.42
+Requires-Dist: torch>=2.1
+Dynamic: license-file
