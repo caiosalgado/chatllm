@@ -1,0 +1,27 @@
+# chatllm
+
+> chatllm é uma micro-biblioteca Python que facilita chats com LLMs (Hugging Face Transformers), mantendo **histórico simples** e **API estilo sklearn**.
+> Foco: `ask()` direto, helpers de histórico (`history()`, `clear_history()`, `pop_last_turn()`, etc.) e reuso do mesmo modelo entre chamadas.
+
+**Notas importantes**
+- Mantém `system` separado do restante do histórico.
+- Não depende de ferramentas externas (tools) — é só chat + histórico.
+- Compatível com chat templates do Transformers (usa `apply_chat_template`).
+
+## Docs
+- [README (GitHub)](https://github.com/caiosalgado/chatllm/blob/main/README.md): instalação (`uv`), exemplos de uso e API.
+- [API de histórico](https://github.com/caiosalgado/chatllm/blob/main/README.md#histórico): métodos e exemplos.
+- [Tests](https://github.com/caiosalgado/chatllm/tree/main/tests): cobertura das operações de histórico e geração (com stubs).
+
+## Exemplos
+- [Exemplo mínimo](https://github.com/caiosalgado/chatllm/blob/main/examples/minimal.py): `ChatLLM("google/gemma-3-4b-it").ask("ping")`.
+- [Histórico + snapshots](https://github.com/caiosalgado/chatllm/blob/main/examples/history_snapshots.py).
+
+## Integrações úteis
+- [Transformers – Chat templates](https://huggingface.co/docs/transformers/en/chat_templating): como formatar `messages` (roles) para modelos de chat.
+- [PyPI-friendly README](https://packaging.python.org/guides/making-a-pypi-friendly-readme/): garantir que o README renderize no PyPI.
+- [pytest – good practices](https://docs.pytest.org/en/stable/explanation/goodpractices.html): estrutura recomendada de testes.
+
+## Optional
+- [llms.txt — especificação](https://llmstxt.org/): formato e exemplos oficiais.
+- [Guia prático de llms.txt](https://www.rankability.com/guides/llms-txt-best-practices/): dicas e erros comuns.

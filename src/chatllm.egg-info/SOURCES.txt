@@ -8,3 +8,6 @@ src/chatllm.egg-info/SOURCES.txt
 src/chatllm.egg-info/dependency_links.txt
 src/chatllm.egg-info/requires.txt
 src/chatllm.egg-info/top_level.txt
+tests/test_ask_stub.py
+tests/test_book.py
+tests/test_history.py

@@ -17,6 +17,11 @@ dependencies = [
 [tool.setuptools.packages.find]
 where = ["src"]
 
+[dependency-groups]
+dev = [
+    "pytest>=8.4.2",
+]
+
 [project.urls]
 Homepage = "https://github.com/caiosalgado/chatllm"
 Repository = "https://github.com/caiosalgado/chatllm.git"

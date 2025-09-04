@@ -103,17 +103,21 @@ conversation = book.get("chat1")
 
 ## Development
 
-### Setup
-
+Install in editable mode with dev dependencies:
 ```bash
-uv venv
-uv sync
+uv pip install -e .
+uv add --dev pytest  # se ainda não tiver pytest
 ```
 
-### Testing
-
+Run tests:
 ```bash
-pytest
+uv run pytest -v
+```
+
+Run examples:
+```bash
+uv run python examples/minimal.py
+uv run python examples/history_snapshots.py
 ```
 
 ### Building
